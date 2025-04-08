@@ -1,0 +1,101 @@
+/* Import Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Body Styling */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 100px;
+}
+
+.navbar-brand .logo {
+    width: 75px;
+    height: 75px;
+    display: block;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Animation on hover */
+.logo:hover {
+    transform: scale(1.1);
+    /* Slight zoom effect */
+    opacity: 0.9;
+    /* Reduce opacity slightly */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo {
+        width: 80px;
+        /* Smaller on mobile screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 60px;
+        /* Even smaller on very small screens */
+    }
+}
+/* Ensure carousel images display properly */
+.carousel-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Optional: Add some spacing below carousel */
+.carousel {
+    margin-bottom: 10px;
+}
+@media (max-width: 575.98px) {
+    .carousel-caption h2 {
+      font-size: 1.2rem;
+    }
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+    .carousel-caption {
+      padding: 0.5rem;
+    }
+  }
+  
+main p {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+@keyframes floatUpDown {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .container .floating-image {
+    animation: floatUpDown 3s ease-in-out infinite;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  @media (max-width: 575.98px) {
+   .container .floating-image,
+    .container .floating-image2 {
+      display: none;
+    }
+  }
+  .container .floating-image2 {
+    animation: floatUpDown 3s ease-in-out infinite;
+    width: 80px;
+    max-width: 80px;
+    height: 80px;
+  }
+.contact-container{
+    background-color: #333;
+}
+  
+footer {
+    padding: 1rem;
+}

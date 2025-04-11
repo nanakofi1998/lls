@@ -95,6 +95,46 @@ main p {
 .contact-container{
     background-color: #333;
 }
+.custom-track-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    max-width: 100%;
+}
+
+.custom-track-form input {
+    padding: 12px 16px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.custom-track-form input:focus {
+    border-color: #19456b;
+}
+
+.custom-track-form button {
+    padding: 12px 24px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #19456b;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-track-form button:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+}
+
   
 footer {
     padding: 1rem;
